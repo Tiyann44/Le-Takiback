@@ -1,25 +1,24 @@
-INSERT INTO majors (id, name, description) VALUES (1, 'Ingéniérie du Numérique', 'Ouaiiis du code partout');
-INSERT INTO majors (id, name, description) VALUES (2, 'Structure & Matériaux', 'Beaucoup de béton et des poutres (snif elle a été renomée)');
-INSERT INTO majors (id, name, description) VALUES (3, 'Aéronautique & Espace', 'Vive le vent');
-INSERT INTO majors (id, name, description) VALUES (4, 'Data Engineering', 'Trop cool plein de données à ordonner');
-INSERT INTO majors (id, name, description) VALUES (5, 'Energie & Environnement', 'On est full green');
-INSERT INTO majors (id, name, description) VALUES (6, 'Engineering Management', 'Des managers de qualité');
-INSERT INTO majors (id, name, description) VALUES (7, 'Ingénierie & Santé', 'On connait tous les os et tous les muscles du corps humain');
-INSERT INTO majors (id, name, description) VALUES (8, 'Ingénierie & Architecture durable', 'Objectif 0 carbon');
-INSERT INTO majors (id, name, description) VALUES (9, 'Design Industriel Durable', 'Ca existait pas pour la P2022 ça');
+INSERT INTO users (id, first_name, last_name, mail, isAdmin, quizPlayed) VALUES (1, 'Jean', 'Tempas', 'jean.tempas@gmail.com',false, '{}');
+INSERT INTO users (id, first_name, last_name,mail, isAdmin, quizPlayed) VALUES (2, 'Maxence', 'Juery', 'maxence.juery@epfedu.fr', true, '{}');
 
-INSERT INTO students (id, first_name, last_name, birthdate, major_id) VALUES (1, 'Paul', 'Harrohide', '2002-06-15', 1);
-INSERT INTO students (id, first_name, last_name, birthdate, major_id) VALUES (2, 'Jean', 'Bonbeur', '2001-08-21', 1);
-INSERT INTO students (id, first_name, last_name, birthdate, major_id) VALUES (3, 'Alain', 'Térieur', '2000-01-11', 1);
+INSERT INTO theme (id, name, description, quiz) VALUES (1, 'Geographie', 'Des quiz sur la géographie', '{}');
+INSERT INTO theme (id, name, description, quiz) VALUES (2, 'Histoire', 'Des quiz sur l''histoire', '{}');
 
-INSERT INTO courses (id, name, hours) VALUES (1, 'Spanish', 30);
-INSERT INTO courses (id, name, hours) VALUES (2, 'German', 30);
-INSERT INTO courses (id, name, hours) VALUES (3, 'Internet of Things', 30);
-INSERT INTO courses (id, name, hours) VALUES (4, 'Thermodynamic', 30);
-INSERT INTO courses (id, name, hours) VALUES (5, 'Anatomy', 30);
-INSERT INTO courses (id, name, hours) VALUES (6, 'Maths', 30);
-INSERT INTO courses (id, name, hours) VALUES (7, 'Java', 30);
-INSERT INTO courses (id, name, hours) VALUES (8, 'Lean Management', 30);
-INSERT INTO student_course (id, student_id, course_id) VALUES (1, 1, 7);
+INSERT INTO quiz (id, name, description, ranking, question) VALUES (1, 'Drapeau du monde', 'Quiz sur les drapeaux du monde', '{}', '{}');
+INSERT INTO quiz (id, name, description, ranking, question) VALUES (2, 'Capitale du monde', 'Quiz sur les capitales du monde', '{}', '{}');
+INSERT INTO quiz (id, name, description, ranking, question) VALUES (3, 'Histoire de France', 'Quiz sur l''histoire de France', '{}', '{}');
+INSERT INTO quiz (id, name, description, ranking, question) VALUES (4, 'Histoire du monde', 'Quiz sur l''histoire du monde', '{}', '{}');
 
+INSERT INTO question (id, question, answer, choice) VALUES (1, 'Quel est le drapeau de la France ?', '{1}', '{1,2,3,4}');
+INSERT INTO question (id, question, answer, choice) VALUES (2, 'Quel est le drapeau de l''Allemagne ?', '{2}', '{1,2,3,4}');
+INSERT INTO question (id, question, answer, choice) VALUES (3, 'Quel est la date de début de règne de Clovis I', '{6}', '{5,6,7,8}');
+INSERT INTO question (id, question, answer, choice) VALUES (4, 'Quel est la date de fin de règne de Clovis I', '{7}', '{5,6,7,8}');
 
+INSERT INTO choice (id, option) VALUES (1, 'Bleu, blanc, rouge');
+INSERT INTO choice (id, option) VALUES (2, 'Noir, rouge, jaune');
+INSERT INTO choice (id, option) VALUES (3, 'Vert, blanc, rouge');
+INSERT INTO choice (id, option) VALUES (4, 'Bleu, blanc, vert');
+INSERT INTO choice (id, option) VALUES (5, '479');
+INSERT INTO choice (id, option) VALUES (6, '481');
+INSERT INTO choice (id, option) VALUES (7, '511');
+INSERT INTO choice (id, option) VALUES (8, '515');
