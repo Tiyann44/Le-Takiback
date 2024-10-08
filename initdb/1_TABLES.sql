@@ -1,30 +1,50 @@
-create table students
+create table users
 (
     id SERIAL PRIMARY KEY,
     first_name TEXT not null,
     last_name TEXT not null,
-    birthdate date null,
-    major_id int null,
-    image bytea null
+    mail TEXT not null,
+    isAdmin bool not null,
+    quizPlayed int [] not null
 );
 
-create table majors
+create table theme
 (
     id SERIAL PRIMARY KEY,
     name TEXT not null,
-    description TEXT not null
+    description TEXT not null,
+    quiz int [] null
 );
 
-create table courses
+create table quiz
 (
     id SERIAL PRIMARY KEY,
     name TEXT not null,
-    hours int not null
+    description TEXT not null,
+    ranking int [] null,
+    question int [] null
 );
 
-create table student_course
+create table question
 (
     id SERIAL PRIMARY KEY,
-    student_id int not null,
-    course_id int not null
+    question TEXT not null,
+    answer int [] not null,
+    choice int [] not null
 );
+
+create table choice
+(
+    id SERIAL PRIMARY KEY,
+    option TEXT not null
+);
+
+create table score
+(
+    id SERIAL PRIMARY KEY,
+    score int not null,
+    userId int not null,
+    quizId int not null,
+    message TEXT not null
+);
+
