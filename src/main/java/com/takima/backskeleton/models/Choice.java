@@ -1,6 +1,5 @@
 package com.takima.backskeleton.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,18 +7,16 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Entity
-@Table(name = "majors")
-@Getter
+@Table(name = "choices")
 @NoArgsConstructor
-public class Major {
+@Getter
+public class Choice {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
-    private String description;
-    @OneToMany(mappedBy = "major")
-    @JsonIgnore
-    private List<Student> students;
 
+    private String option;  // Le texte du choix
+
+    @OneToMany(mappedBy = "choice")
+    private List<Answer> answers;  // Relation un choix -> plusieurs réponses
 }
-
