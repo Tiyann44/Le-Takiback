@@ -1,20 +1,20 @@
-INSERT INTO users (id, first_name, last_name, mail, isAdmin, quizPlayed) VALUES (1, 'Jean', 'Tempas', 'jean.tempas@gmail.com',false, '{}');
-INSERT INTO users (id, first_name, last_name,mail, isAdmin, quizPlayed) VALUES (2, 'Maxence', 'Juery', 'maxence.juery@epfedu.fr', true, '{}');
+INSERT INTO users (id, first_name, last_name, mail, isAdmin) VALUES (1, 'Jean', 'Tempas', 'jean.tempas@gmail.com',false);
+INSERT INTO users (id, first_name, last_name,mail, isAdmin) VALUES (2, 'Maxence', 'Juery', 'maxence.juery@epfedu.fr', true);
 
-INSERT INTO theme (id, name, description, quiz) VALUES (1, 'Geographie', 'Des quiz sur la géographie', '{}');
-INSERT INTO theme (id, name, description, quiz) VALUES (2, 'Histoire', 'Des quiz sur l''histoire', '{}');
+INSERT INTO theme (id, name, description) VALUES (1, 'Geographie', 'Des quiz sur la géographie');
+INSERT INTO theme (id, name, description) VALUES (2, 'Histoire', 'Des quiz sur l''histoire');
 
-INSERT INTO quiz (id, name, description, ranking, question) VALUES (1, 'Drapeau du monde', 'Quiz sur les drapeaux du monde', '{}', '{}');
-INSERT INTO quiz (id, name, description, ranking, question) VALUES (2, 'Capitale du monde', 'Quiz sur les capitales du monde', '{}', '{}');
-INSERT INTO quiz (id, name, description, ranking, question) VALUES (3, 'Histoire de France', 'Quiz sur l''histoire de France', '{}', '{}');
-INSERT INTO quiz (id, name, description, ranking, question) VALUES (4, 'Histoire du monde', 'Quiz sur l''histoire du monde', '{}', '{}');
+INSERT INTO quiz (id, theme_id, name, description) VALUES (1,1, 'Drapeau du monde', 'Quiz sur les drapeaux du monde');
+INSERT INTO quiz (id, theme_id,name, description) VALUES (2,1, 'Capitale du monde', 'Quiz sur les capitales du monde');
+INSERT INTO quiz (id, theme_id,name, description) VALUES (3,2,'Histoire de France', 'Quiz sur l''histoire de France');
+INSERT INTO quiz (id, theme_id,name, description) VALUES (4,2,'Histoire du monde', 'Quiz sur l''histoire du monde');
 
-INSERT INTO question (id, question, answer, choice) VALUES (1, 'Quel est le drapeau de la France ?', '{1}', '{1,2,3,4}');
-INSERT INTO question (id, question, answer, choice) VALUES (2, 'Quel est le drapeau de l''Allemagne ?', '{2}', '{1,2,3,4}');
-INSERT INTO question (id, question, answer, choice) VALUES (3, 'Quel est la date de début de règne de Clovis I', '{6}', '{5,6,7,8}');
-INSERT INTO question (id, question, answer, choice) VALUES (4, 'Quel est la date de fin de règne de Clovis I', '{7}', '{5,6,7,8}');
+INSERT INTO question (id, quiz_id, question) VALUES (1, 1,'Quel est le drapeau de la France ?');
+INSERT INTO question (id, quiz_id, question) VALUES (2, 1,'Quel est le drapeau de l''Allemagne ?');
+INSERT INTO question (id, quiz_id, question) VALUES (3, 3,'Quel est la date de début de règne de Clovis I');
+INSERT INTO question (id, quiz_id, question) VALUES (4, 3,'Quel est la date de fin de règne de Clovis I');
 
-INSERT INTO choice (id, option) VALUES (1, 'Bleu, blanc, rouge');
+INSERT INTO choice (id, option) VALUES (1,'Bleu, blanc, rouge');
 INSERT INTO choice (id, option) VALUES (2, 'Noir, rouge, jaune');
 INSERT INTO choice (id, option) VALUES (3, 'Vert, blanc, rouge');
 INSERT INTO choice (id, option) VALUES (4, 'Bleu, blanc, vert');
@@ -22,3 +22,20 @@ INSERT INTO choice (id, option) VALUES (5, '479');
 INSERT INTO choice (id, option) VALUES (6, '481');
 INSERT INTO choice (id, option) VALUES (7, '511');
 INSERT INTO choice (id, option) VALUES (8, '515');
+
+INSERT INTO answer (id, question_id, choice_id, isCorrect) VALUES (1, 1, 1, true);
+INSERT INTO answer (id, question_id, choice_id, isCorrect) VALUES (2, 1, 2, false);
+INSERT INTO answer (id, question_id, choice_id, isCorrect) VALUES (3, 1, 3, false);
+INSERT INTO answer (id, question_id, choice_id, isCorrect) VALUES (4, 1, 4, false);
+INSERT INTO answer (id, question_id, choice_id, isCorrect) VALUES (5, 2, 1, false);
+INSERT INTO answer (id, question_id, choice_id, isCorrect) VALUES (6, 2, 2, true);
+INSERT INTO answer (id, question_id, choice_id, isCorrect) VALUES (7, 2, 3, false);
+INSERT INTO answer (id, question_id, choice_id, isCorrect) VALUES (8, 2, 4, false);
+INSERT INTO answer (id, question_id, choice_id, isCorrect) VALUES (9, 3, 5, false);
+INSERT INTO answer (id, question_id, choice_id, isCorrect) VALUES (10, 3, 6, true);
+INSERT INTO answer (id, question_id, choice_id, isCorrect) VALUES (11, 3, 7, false);
+INSERT INTO answer (id, question_id, choice_id, isCorrect) VALUES (12, 3, 8, false);
+INSERT INTO answer (id, question_id, choice_id, isCorrect) VALUES (13, 4, 5, false);
+INSERT INTO answer (id, question_id, choice_id, isCorrect) VALUES (14, 4, 6, false);
+INSERT INTO answer (id, question_id, choice_id, isCorrect) VALUES (15, 4, 7, true);
+INSERT INTO answer (id, question_id, choice_id, isCorrect) VALUES (16, 4, 8, false);
