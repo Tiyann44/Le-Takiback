@@ -1,6 +1,5 @@
 package com.takima.backskeleton.services;
 
-import com.takima.backskeleton.DAO.MajorDao;
 import com.takima.backskeleton.models.Major;
 import com.takima.backskeleton.models.Student;
 import lombok.RequiredArgsConstructor;
