@@ -13,7 +13,7 @@ import java.util.Optional;
 public interface UserDAO extends JpaRepository<User, Long> {
 
     User findByEmail(String email);
-    User deleteUserByEmail(String email);
+    void deleteUserByEmail(String email);
 
     @Modifying
     @Transactional

@@ -3,11 +3,15 @@ package com.takima.backskeleton.models;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.List;
 
 @Entity
-@Table(name = "quizzes")
+@Table(name = "quiz")
 @NoArgsConstructor
 @Getter
+@Setter
 public class Quiz {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

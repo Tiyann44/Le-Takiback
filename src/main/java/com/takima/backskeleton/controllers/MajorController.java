@@ -2,7 +2,6 @@ package com.takima.backskeleton.controllers;
 
 import com.takima.backskeleton.models.Major;
 import com.takima.backskeleton.models.Student;
-import com.takima.backskeleton.services.MajorService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

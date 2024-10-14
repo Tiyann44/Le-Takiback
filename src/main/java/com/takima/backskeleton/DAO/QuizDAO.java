@@ -12,7 +12,7 @@ public interface QuizDAO extends JpaRepository<Quiz, Long> {
     @Modifying
     @Transactional
     @Query("UPDATE Quiz q SET q.name = ?2 WHERE q.id = ?1")
-    int updateQuizById(long id, String name);
+    int updateNameById(long id, String name);
 
     @Modifying
     @Transactional

@@ -12,11 +12,5 @@ public interface QuestionDAO extends JpaRepository<Question, Long> {
     @Modifying
     @Transactional
     @Query("UPDATE Question q SET q.question = ?2 WHERE q.id = ?1")
-    int updateQuestionById(long id, String title);
-
-    // supprimer les questions par quiz id
-    @Modifying
-    @Transactional
-    @Query("DELETE FROM Question q WHERE q.quiz.id = ?1")
-    int deleteQuestionsByQuizId(long id);
+    int updateQuestionTitleById(long id, String title);
 }
