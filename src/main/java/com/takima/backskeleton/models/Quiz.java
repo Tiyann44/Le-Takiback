@@ -1,5 +1,6 @@
 package com.takima.backskeleton.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,14 +17,13 @@ public class Quiz {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String name;
     private String description;
 
     @ManyToOne
-    @JoinColumn(name = "theme_id", nullable = false)
-    private Theme theme;  // Relation plusieurs quiz -> un thème
+    @JoinColumn(name = "themeid", nullable = false)
+    private Theme theme;
 
     @OneToMany(mappedBy = "quiz")
-    private List<Question> questions;  // Relation un quiz -> plusieurs questions
+    private List<Question> questions;
 }

@@ -11,7 +11,7 @@ public class AnswerMapper {
         answer.setId(answerDTO.getId());
         answer.setQuestion(question);
         answer.setChoice(choice);
-        answer.setIsCorrect(answerDTO.getIsCorrect());
+        answer.setIscorrect(answerDTO.getIsCorrect());
         return answer;
     }
 
@@ -20,7 +20,7 @@ public class AnswerMapper {
                 answer.getId(),
                 answer.getQuestion().getId(),
                 answer.getChoice().getId(),
-                answer.getIsCorrect()
+                answer.getIscorrect()
         );
     }
 }

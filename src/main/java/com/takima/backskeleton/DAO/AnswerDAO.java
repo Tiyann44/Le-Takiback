@@ -11,11 +11,6 @@ import java.util.List;
 
 @Repository
 public interface AnswerDAO extends JpaRepository<Answer, Long> {
-    List<Answer> findAnswerByQuestionIdAndIsCorrect(long id, boolean isCorrect);
+    List<Answer> findAnswerByQuestionIdAndIscorrect(long id, boolean iscorrect);
     List<Answer> findAnswersByQuestionId(long id);
-
-    @Modifying
-    @Transactional
-    @Query("UPDATE Answer a SET a.isCorrect = ?2 WHERE a.id = ?1")
-    int updateIsCorrectById(long id, boolean isCorrect);
 }

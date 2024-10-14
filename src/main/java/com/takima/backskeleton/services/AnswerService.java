@@ -26,13 +26,15 @@ public class AnswerService {
     @Autowired
     private ChoiceDAO choiceDAO;
 
-    public boolean updateIsCorrectById(Long answerId, Boolean isCorrect) {
-        int rowsUpdated = answerDAO.updateIsCorrectById(answerId, isCorrect);
-        return rowsUpdated > 0;
+    public Answer updateIsCorrectById(Long answerId, Boolean isCorrect) {
+        Answer answer = answerDAO.findById(answerId).orElseThrow(() -> new RuntimeException("Pas de réponse avec l'id " + String.valueOf(answerId)));
+        answer.setIscorrect(isCorrect);
+        answerDAO.save(answer);
+        return answer;
     }
 
     public List<Answer> findAnswerByQuestionIdAndIsCorrect(Long questionId, Boolean isCorrect) {
-        return answerDAO.findAnswerByQuestionIdAndIsCorrect(questionId, isCorrect);
+        return answerDAO.findAnswerByQuestionIdAndIscorrect(questionId, isCorrect);
     }
 
     public List<Answer> findAnswersByQuestionId(Long questionId) {
@@ -57,5 +59,22 @@ public class AnswerService {
 
     public void deleteAnswerById(Long answerId) {
         answerDAO.deleteById(answerId);
+    }
+
+    public boolean updateAnswer(Long answerId, AnswerDTO answerDTO) {
+        Optional<Answer> answer = answerDAO.findById(answerId);
+        if (answer.isEmpty()) {
+            return false;
+        }
+
+        Question question = questionDAO.findById(answerDTO.getQuestionId())
+                .orElseThrow(() -> new RuntimeException("Question not found"));
+        Choice choice = choiceDAO.findById(answerDTO.getChoiceId())
+                .orElseThrow(() -> new RuntimeException("Choice not found"));
+
+        Answer updatedAnswer = AnswerMapper.fromDto(answerDTO, question, choice);
+        updatedAnswer.setId(answerId);
+        answerDAO.save(updatedAnswer);
+        return true;
     }
 }

@@ -16,11 +16,11 @@ public class Score {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
+    @JoinColumn(name = "userid", nullable = false)
     private User user;  // Relation plusieurs scores -> un utilisateur
 
     @ManyToOne
-    @JoinColumn(name = "quiz_id", nullable = false)
+    @JoinColumn(name = "quizid", nullable = false)
     private Quiz quiz;  // Relation plusieurs scores -> un quiz
 
     private Integer score;  // Le score obtenu

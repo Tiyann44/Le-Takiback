@@ -7,20 +7,20 @@ public class UserMapper {
     public static User fromDto (UserDTO userDTO) {
         User user = new User();
         user.setId(userDTO.getId());
-        user.setFirstName(userDTO.getFirstName());
-        user.setLastName(userDTO.getLastName());
+        user.setFirstname(userDTO.getFirstName());
+        user.setLastname(userDTO.getLastName());
         user.setMail(userDTO.getMail());
-        user.setIsAdmin(userDTO.getIsAdmin());
+        user.setIsadmin(userDTO.getIsAdmin());
         return user;
     }
 
     public static UserDTO toDto (User user) {
         return new UserDTO(
                 user.getId(),
-                user.getFirstName(),
-                user.getLastName(),
+                user.getFirstname(),
+                user.getLastname(),
                 user.getMail(),
-                user.getIsAdmin()
+                user.getIsadmin()
         );
     }
 

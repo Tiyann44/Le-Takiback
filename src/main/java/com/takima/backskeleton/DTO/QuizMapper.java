@@ -18,6 +18,7 @@ public class QuizMapper {
         return new QuizDTO(
                 quiz.getId(),
                 quiz.getTheme().getId(),
+                quiz.getTheme().getName(),
                 quiz.getName(),
                 quiz.getDescription()
         );

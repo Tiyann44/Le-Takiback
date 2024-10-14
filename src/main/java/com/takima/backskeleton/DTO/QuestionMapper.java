@@ -16,6 +16,7 @@ public class QuestionMapper {
         return new QuestionDTO(
                 question.getId(),
                 question.getQuiz().getId(),
+                question.getQuiz().getName(),
                 question.getQuestion()
         );
     }

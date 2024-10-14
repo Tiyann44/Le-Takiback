@@ -9,8 +9,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ChoiceDAO extends JpaRepository<Choice, Long> {
-    @Modifying
-    @Transactional
-    @Query("UPDATE Choice a SET a.option = ?2 WHERE a.id = ?1")
-    int updateOptionById(long id, String option);
+
 }

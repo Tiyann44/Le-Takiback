@@ -17,13 +17,13 @@ public class Question {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String question;  // Le texte de la question
+    private String question;
 
     @ManyToOne
-    @JoinColumn(name = "quizId", nullable = false)
-    private Quiz quiz;  // Relation plusieurs questions -> un quiz
+    @JoinColumn(name = "quizid", nullable = false)
+    private Quiz quiz;
 
     @OneToMany(mappedBy = "question")
-    private List<Answer> answers;  // Relation une question -> plusieurs réponses
+    private List<Answer> answers;
 
 }

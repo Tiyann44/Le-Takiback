@@ -16,12 +16,12 @@ public class Answer {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "questionId", nullable = false)
+    @JoinColumn(name = "questionid", nullable = false)
     private Question question;
 
     @ManyToOne
-    @JoinColumn(name = "choiceId", nullable = false)
+    @JoinColumn(name = "choiceid", nullable = false)
     private Choice choice;
 
-    private Boolean isCorrect;
+    private Boolean iscorrect;
 }

@@ -25,7 +25,7 @@ public class UserService {
     }
 
     public UserDTO findUserByEmail(String email) {
-        User user = userDAO.findByEmail(email);
+        User user = userDAO.findByMail(email);
         return UserMapper.toDto(user);
     }
 
@@ -34,38 +34,18 @@ public class UserService {
         return user.map(UserMapper::toDto);
     }
 
-    public UserDTO saveUser (UserDTO userDTO){
-        User user = UserMapper.fromDto(userDTO);
-        User savedUser = userDAO.save(user);
-        return UserMapper.toDto(savedUser);
-    }
-
-    public void deleteUserByEmail(String email) {
-        userDAO.deleteUserByEmail(email);
+    public UserDTO saveUser(UserDTO userDTO){
+        try {
+            User user = UserMapper.fromDto(userDTO);
+            User savedUser = userDAO.save(user);
+            return UserMapper.toDto(savedUser);
+        } catch (Exception e) {
+            throw new RuntimeException("Erreur lors de la création de l'utilisateur", e);
+        }
     }
 
     public void deleteUserById(Long id) {
         userDAO.deleteById(id);
-    }
-
-    public boolean updateFirstNameById(Long userId, String newFirstName) {
-        int rowsUpdated = userDAO.updateFirstNameById(userId, newFirstName);
-        return rowsUpdated > 0;
-    }
-
-    public boolean updateLastNameById(Long userId, String newLastName) {
-        int rowsUpdated = userDAO.updateLastNameById(userId, newLastName);
-        return rowsUpdated > 0;
-    }
-
-    public boolean updateEmailById(Long userId, String newEmail) {
-        int rowsUpdated = userDAO.updateEmailById(userId, newEmail);
-        return rowsUpdated > 0;
-    }
-
-    public boolean updateIsAdminById(Long userId, Boolean isAdmin) {
-        int rowsUpdated = userDAO.updateIsAdminById(userId, isAdmin);
-        return rowsUpdated > 0;
     }
 
     public User saveUser(User user) {

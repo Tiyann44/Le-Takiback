@@ -20,7 +20,7 @@ create table quiz
     themeId int not null,
     name TEXT not null,
     description TEXT not null,
-    FOREIGN KEY (themeId) REFERENCES theme(id)
+    FOREIGN KEY (themeId) REFERENCES theme(id) ON DELETE CASCADE
 );
 
 create table question

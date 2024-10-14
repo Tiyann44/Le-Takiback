@@ -16,10 +16,10 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String firstName;
-    private String lastName;
+    private String firstname;
+    private String lastname;
     private String mail;
-    private Boolean isAdmin;
+    private Boolean isadmin;
 
     @OneToMany(mappedBy = "user")
     private List<Score> scores;  // Relation un utilisateur -> plusieurs scores
