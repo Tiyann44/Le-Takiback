@@ -1,8 +1,8 @@
 create table users
 (
-    id SERIAL PRIMARY KEY,
-    first_name TEXT not null,
-    last_name TEXT not null,
+    id SERIAL PRIMARY KEY ,
+    firstName TEXT not null,
+    lastName TEXT not null,
     mail TEXT not null,
     isAdmin BOOLEAN not null
 );
@@ -17,18 +17,18 @@ create table theme
 create table quiz
 (
     id SERIAL PRIMARY KEY,
-    theme_id int not null,
+    themeId int not null,
     name TEXT not null,
     description TEXT not null,
-    FOREIGN KEY (theme_id) REFERENCES theme(id) ON DELETE CASCADE
+    FOREIGN KEY (themeId) REFERENCES theme(id)
 );
 
 create table question
 (
     id SERIAL PRIMARY KEY,
-    quiz_id int not null,
+    quizId int not null,
     question TEXT not null,
-    FOREIGN KEY (quiz_id) REFERENCES quiz(id) ON DELETE CASCADE
+    FOREIGN KEY (quizId) REFERENCES quiz(id) ON DELETE CASCADE
 );
 
 create table choice
@@ -40,11 +40,11 @@ create table choice
 create table answer
 (
     id SERIAL PRIMARY KEY,
-    question_id int not null,
-    choice_id int not null,
+    questionId int not null,
+    choiceId int not null,
     isCorrect BOOLEAN not null,
-    FOREIGN KEY (question_id) REFERENCES question(id) ON DELETE CASCADE,
-    FOREIGN KEY (choice_id) REFERENCES choice(id) ON DELETE CASCADE
+    FOREIGN KEY (questionId) REFERENCES question(id) ON DELETE CASCADE,
+    FOREIGN KEY (choiceId) REFERENCES choice(id) ON DELETE CASCADE
 );
 
 create table score
