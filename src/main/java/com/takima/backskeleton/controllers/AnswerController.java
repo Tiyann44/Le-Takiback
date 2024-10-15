@@ -7,6 +7,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/answers")
 public class AnswerController {
@@ -37,5 +39,10 @@ public class AnswerController {
     public ResponseEntity<Void> deleteAnswer(@PathVariable Long answerId) {
         answerService.deleteAnswerById(answerId);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/question/{questionId}")
+    public ResponseEntity<List<AnswerDTO>> getAnswersByQuestionId(@PathVariable Long questionId) {
+        return ResponseEntity.ok(answerService.getAnswersByQuestionId(questionId));
     }
 }

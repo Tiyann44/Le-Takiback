@@ -1,9 +1,12 @@
 package com.takima.backskeleton.services;
 
+import com.takima.backskeleton.DAO.AnswerDAO;
 import com.takima.backskeleton.DAO.QuestionDAO;
 import com.takima.backskeleton.DAO.QuizDAO;
+import com.takima.backskeleton.DTO.AnswerDTO;
 import com.takima.backskeleton.DTO.QuestionDTO;
 import com.takima.backskeleton.DTO.QuestionMapper;
+import com.takima.backskeleton.models.Answer;
 import com.takima.backskeleton.models.Question;
 import com.takima.backskeleton.models.Quiz;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +24,9 @@ public class QuestionService {
 
     @Autowired
     private QuizDAO quizDAO;
+
+    @Autowired
+    private AnswerDAO answerDAO;
 
     public QuestionDTO createQuestion(QuestionDTO questionDTO) {
         Quiz quiz = quizDAO.findById(questionDTO.getQuizId())
@@ -57,4 +63,5 @@ public class QuestionService {
     public void deleteQuestionById(Long questionId) {
         questionDAO.deleteById(questionId);
     }
+
 }

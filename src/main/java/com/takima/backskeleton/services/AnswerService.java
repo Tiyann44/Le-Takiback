@@ -77,4 +77,11 @@ public class AnswerService {
         answerDAO.save(updatedAnswer);
         return true;
     }
+
+    public List<AnswerDTO> getAnswersByQuestionId(Long questionId) {
+        List<Answer> answers = answerDAO.findAnswersByQuestionId(questionId);
+        return answers.stream()
+                .map(AnswerMapper::toDto)
+                .collect(java.util.stream.Collectors.toList());
+    }
 }

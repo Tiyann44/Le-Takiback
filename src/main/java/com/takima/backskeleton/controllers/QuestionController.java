@@ -1,6 +1,8 @@
 package com.takima.backskeleton.controllers;
 
+import com.takima.backskeleton.DTO.AnswerDTO;
 import com.takima.backskeleton.DTO.QuestionDTO;
+import com.takima.backskeleton.models.Answer;
 import com.takima.backskeleton.services.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
