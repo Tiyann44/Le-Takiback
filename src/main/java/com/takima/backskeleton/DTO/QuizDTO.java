@@ -12,4 +12,5 @@ public class QuizDTO {
     private String themeName;
     private String name;
     private String description;
+    private String image;
 }

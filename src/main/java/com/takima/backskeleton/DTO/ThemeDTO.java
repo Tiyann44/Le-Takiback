@@ -9,4 +9,5 @@ public class ThemeDTO {
     private Long id;
     private String name;
     private String description;
+    private String image;
 }

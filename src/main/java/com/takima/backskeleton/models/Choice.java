@@ -17,8 +17,8 @@ public class Choice {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String option;  // Le texte du choix
+    private String option;
 
     @OneToMany(mappedBy = "choice")
-    private List<Answer> answers;  // Relation un choix -> plusieurs réponses
+    private List<Answer> answers;
 }
