@@ -1,5 +1,6 @@
 package com.takima.backskeleton.controllers;
 
+import com.takima.backskeleton.DTO.QuestionDTO;
 import com.takima.backskeleton.DTO.QuizDTO;
 import com.takima.backskeleton.services.QuizService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,5 +46,10 @@ public class QuizController {
     public ResponseEntity<Void> deleteQuiz(@PathVariable Long quizId) {
         quizService.deleteQuizById(quizId);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/Quiz/{quizId}")
+    public ResponseEntity<List<QuestionDTO>> getQuestionsByQuizId(@PathVariable Long quizId) {
+        return ResponseEntity.ok(quizService.getQuestionsByQuizId(quizId));
     }
 }

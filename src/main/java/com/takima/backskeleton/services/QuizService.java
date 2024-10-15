@@ -2,6 +2,8 @@ package com.takima.backskeleton.services;
 
 import com.takima.backskeleton.DAO.QuizDAO;
 import com.takima.backskeleton.DAO.ThemeDAO;
+import com.takima.backskeleton.DTO.QuestionDTO;
+import com.takima.backskeleton.DTO.QuestionMapper;
 import com.takima.backskeleton.DTO.QuizDTO;
 import com.takima.backskeleton.DTO.QuizMapper;
 import com.takima.backskeleton.models.Quiz;
@@ -56,5 +58,11 @@ public class QuizService {
 
     public void deleteQuizById(Long quizId) {
         quizDAO.deleteById(quizId);
+    }
+
+    public List<QuestionDTO> getQuestionsByQuizId(Long quizId) {
+        Quiz quiz = quizDAO.findById(quizId)
+                .orElseThrow(() -> new RuntimeException("Quiz not found"));
+        return quiz.getQuestions().stream().map(QuestionMapper::toDto).collect(Collectors.toList());
     }
 }
