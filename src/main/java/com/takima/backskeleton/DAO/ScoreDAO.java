@@ -9,13 +9,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ScoreDAO extends JpaRepository<Score, Long> {
-    @Modifying
-    @Transactional
-    @Query("UPDATE Score s SET s.score = ?2 WHERE s.id = ?1")
-    int updateScoreById(long id, int score);
-
-    @Modifying
-    @Transactional
-    @Query("UPDATE Score s SET s.message = ?2 WHERE s.id = ?1")
-    int updateMessageById(long id, String message);
 }

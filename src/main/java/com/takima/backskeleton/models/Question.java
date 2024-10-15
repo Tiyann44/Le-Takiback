@@ -3,22 +3,27 @@ package com.takima.backskeleton.models;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.List;
 
 @Entity
-@Table(name = "questions")
+@Table(name = "question")
 @NoArgsConstructor
 @Getter
+@Setter
 public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String question;  // Le texte de la question
+    private String question;
 
     @ManyToOne
-    @JoinColumn(name = "quiz_id", nullable = false)
-    private Quiz quiz;  // Relation plusieurs questions -> un quiz
+    @JoinColumn(name = "quizid", nullable = false)
+    private Quiz quiz;
 
     @OneToMany(mappedBy = "question")
-    private List<Answer> answers;  // Relation une question -> plusieurs réponses
+    private List<Answer> answers;
+
 }
