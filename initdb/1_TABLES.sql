@@ -4,6 +4,7 @@ create table users
     firstName TEXT not null,
     lastName TEXT not null,
     mail TEXT not null,
+    pseudo TEXT not null,
     image TEXT not null,
     isAdmin BOOLEAN not null
 );

@@ -18,6 +18,7 @@ public class User {
     private Long id;
     private String firstname;
     private String lastname;
+    private String pseudo;
     private String mail;
     private String image;
     private Boolean isadmin;
