@@ -11,6 +11,7 @@ public class QuizMapper {
         quiz.setTheme(theme);
         quiz.setName(quizDTO.getName());
         quiz.setDescription(quizDTO.getDescription());
+        quiz.setImage(quizDTO.getImage());
         return quiz;
     }
 
@@ -20,7 +21,8 @@ public class QuizMapper {
                 quiz.getTheme().getId(),
                 quiz.getTheme().getName(),
                 quiz.getName(),
-                quiz.getDescription()
+                quiz.getDescription(),
+                quiz.getImage()
         );
     }
 }

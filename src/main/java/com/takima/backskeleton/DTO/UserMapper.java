@@ -10,6 +10,7 @@ public class UserMapper {
         user.setFirstname(userDTO.getFirstName());
         user.setLastname(userDTO.getLastName());
         user.setMail(userDTO.getMail());
+        user.setImage(userDTO.getImage());
         user.setIsadmin(userDTO.getIsAdmin());
         return user;
     }
@@ -20,6 +21,7 @@ public class UserMapper {
                 user.getFirstname(),
                 user.getLastname(),
                 user.getMail(),
+                user.getImage(),
                 user.getIsadmin()
         );
     }

@@ -19,10 +19,9 @@ public class User {
     private String firstname;
     private String lastname;
     private String mail;
+    private String image;
     private Boolean isadmin;
 
     @OneToMany(mappedBy = "user")
-    private List<Score> scores;  // Relation un utilisateur -> plusieurs scores
-
-
+    private List<Score> scores;
 }

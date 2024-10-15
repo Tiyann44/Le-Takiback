@@ -19,6 +19,7 @@ public class Quiz {
     private Long id;
     private String name;
     private String description;
+    private String image;
 
     @ManyToOne
     @JoinColumn(name = "themeid", nullable = false)

@@ -9,6 +9,7 @@ public class ThemeMapper {
         theme.setId(themeDTO.getId());
         theme.setName(themeDTO.getName());
         theme.setDescription(themeDTO.getDescription());
+        theme.setImage(themeDTO.getImage());
         return theme;
     }
 
@@ -16,7 +17,8 @@ public class ThemeMapper {
         return new ThemeDTO(
                 theme.getId(),
                 theme.getName(),
-                theme.getDescription()
+                theme.getDescription(),
+                theme.getImage()
         );
     }
 }

@@ -18,6 +18,7 @@ public class Question {
     private Long id;
 
     private String question;
+    private String image;
 
     @ManyToOne
     @JoinColumn(name = "quizid", nullable = false)

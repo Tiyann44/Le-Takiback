@@ -1,18 +1,18 @@
-INSERT INTO users (id, firstName, lastName, mail, isAdmin) VALUES (1, 'Jean', 'Tempas', 'jean.tempas@gmail.com',false);
-INSERT INTO users (id, firstName, lastName,mail, isAdmin) VALUES (2, 'Maxence', 'Juery', 'maxence.juery@epfedu.fr', true);
+INSERT INTO users (id, firstName, lastName, mail,image, isAdmin) VALUES (1, 'Jean', 'Tempas', 'jean.tempas@gmail.com','',false);
+INSERT INTO users (id, firstName, lastName,mail,image, isAdmin) VALUES (2, 'Maxence', 'Juery', 'maxence.juery@epfedu.fr','', true);
 
-INSERT INTO theme (id, name, description) VALUES (1, 'Geographie', 'Des quiz sur la géographie');
-INSERT INTO theme (id, name, description) VALUES (2, 'Histoire', 'Des quiz sur l''histoire');
+INSERT INTO theme (id, name, description, image) VALUES (1, 'Geographie', 'Des quiz sur la géographie','');
+INSERT INTO theme (id, name, description, image) VALUES (2, 'Histoire', 'Des quiz sur l''histoire','');
 
-INSERT INTO quiz (id, themeId, name, description) VALUES (1,1, 'Drapeau du monde', 'Quiz sur les drapeaux du monde');
-INSERT INTO quiz (id, themeId,name, description) VALUES (2,1, 'Capitale du monde', 'Quiz sur les capitales du monde');
-INSERT INTO quiz (id, themeId,name, description) VALUES (3,2,'Histoire de France', 'Quiz sur l''histoire de France');
-INSERT INTO quiz (id, themeId,name, description) VALUES (4,2,'Histoire du monde', 'Quiz sur l''histoire du monde');
+INSERT INTO quiz (id, themeId, name, description, image) VALUES (1,1, 'Drapeau du monde', 'Quiz sur les drapeaux du monde', '');
+INSERT INTO quiz (id, themeId,name, description, image) VALUES (2,1, 'Capitale du monde', 'Quiz sur les capitales du monde', '');
+INSERT INTO quiz (id, themeId,name, description, image) VALUES (3,2,'Histoire de France', 'Quiz sur l''histoire de France', '');
+INSERT INTO quiz (id, themeId,name, description, image) VALUES (4,2,'Histoire du monde', 'Quiz sur l''histoire du monde', '');
 
-INSERT INTO question (id, quizId, question) VALUES (1, 1,'Quel est le drapeau de la France ?');
-INSERT INTO question (id, quizId, question) VALUES (2, 1,'Quel est le drapeau de l''Allemagne ?');
-INSERT INTO question (id, quizId, question) VALUES (3, 3,'Quel est la date de début de règne de Clovis I');
-INSERT INTO question (id, quizId, question) VALUES (4, 3,'Quel est la date de fin de règne de Clovis I');
+INSERT INTO question (id, quizId, question, image) VALUES (1, 1,'Quel est le drapeau de la France ?','');
+INSERT INTO question (id, quizId, question, image) VALUES (2, 1,'Quel est le drapeau de l''Allemagne ?','');
+INSERT INTO question (id, quizId, question, image) VALUES (3, 3,'Quel est la date de début de règne de Clovis I','');
+INSERT INTO question (id, quizId, question, image) VALUES (4, 3,'Quel est la date de fin de règne de Clovis I','');
 
 INSERT INTO choice (id, option) VALUES (1,'Bleu, blanc, rouge');
 INSERT INTO choice (id, option) VALUES (2, 'Noir, rouge, jaune');

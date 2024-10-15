@@ -9,6 +9,7 @@ public class QuestionMapper {
         question.setId(questionDTO.getId());
         question.setQuiz(quiz);
         question.setQuestion(questionDTO.getQuestion());
+        question.setImage(questionDTO.getImage());
         return question;
     }
 
@@ -17,7 +18,8 @@ public class QuestionMapper {
                 question.getId(),
                 question.getQuiz().getId(),
                 question.getQuiz().getName(),
-                question.getQuestion()
+                question.getQuestion(),
+                question.getImage()
         );
     }
 }
