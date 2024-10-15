@@ -1,54 +1,54 @@
 -- User NON Admin
-INSERT INTO users (id, firstName, lastName, mail,pseudo,image, isAdmin) VALUES (1, 'Jean', 'Tempas', 'jean.tempas@gmail.com','EnJeanT','',false);
+INSERT INTO users (id, firstName, lastName, mail,pseudo,image, isAdmin) VALUES (1, 'Jean', 'Tempas', 'jean.tempas@gmail.com','EnJeanT','https://www.pngmart.com/files/21/Admin-Profile-PNG-Pic.png',false);
 
 -- User Admin
-INSERT INTO users (id, firstName, lastName,mail,pseudo,image, isAdmin) VALUES (2, 'Maxence', 'Juery', 'maxence.juery@epfedu.fr','MaxenceJ','', true);
+INSERT INTO users (id, firstName, lastName,mail,pseudo,image, isAdmin) VALUES (2, 'Maxence', 'Juery', 'maxence.juery@epfedu.fr','MaxenceJ','https://www.shutterstock.com/image-vector/user-icon-vector-600nw-393536320.jpg', true);
 
 -- Thème de quiz
 INSERT INTO theme (id, name, description, image) VALUES (1, 'Pokémon', 'Attrapez-les tous !','https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/640px-International_Pok%C3%A9mon_logo.svg.png');
-INSERT INTO theme (id, name, description, image) VALUES (2, 'Valorant', 'Connaissez-vous les secrets de chaques agents ?','');
-INSERT INTO theme (id, name, description, image) VALUES (3, 'League Of Legends', 'Êtes-vous digne du titre Master','');
-INSERT INTO theme (id, name, description,image) VALUES (4,'Minecraft', 'Connaissez-vous tous les secrets de ce monde cubique','');
+INSERT INTO theme (id, name, description, image) VALUES (2, 'Valorant', 'Connaissez-vous les secrets de chaques agents ?','https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/0dd9058c623268e044399d7433371d89041a47b3-3440x1020.jpg?auto=format&fit=fill&q=80&h=1020');
+INSERT INTO theme (id, name, description, image) VALUES (3, 'League Of Legends', 'Êtes-vous digne du titre Master','https://www.pedagojeux.fr/wp-content/uploads/2019/11/1280x720_LoL.jpg');
+INSERT INTO theme (id, name, description,image) VALUES (4,'Minecraft', 'Connaissez-vous tous les secrets de ce monde cubique','https://www.minecraft.net/content/dam/games/minecraft/key-art/Vanilla-PMP_Collection-Carousel-0_Buzzy-Bees_1280x768.jpg');
 
 -- Quiz pour Pokémon
 INSERT INTO quiz (id, themeId, name, description, image)
-VALUES (1, 1, 'Connaissances générales Pokémon', 'Testez vos connaissances sur l’univers Pokémon', '');
+VALUES (1, 1, 'Connaissances générales Pokémon', 'Testez vos connaissances sur l’univers Pokémon', 'https://img.lemde.fr/2022/12/22/5/0/1730/865/1440/720/60/0/e968e4d_1671703423578-b5e.jpeg');
 
 -- Quiz pour Valorant
 INSERT INTO quiz (id, themeId, name, description, image)
-VALUES (2, 2, 'Agents de Valorant', 'Connaissez-vous les capacités des agents ?', '');
+VALUES (2, 2, 'Agents de Valorant', 'Connaissez-vous les capacités des agents ?', 'https://img.redbull.com/images/c_crop,w_1920,h_960,x_0,y_103/c_auto,w_1200,h_600/f_auto,q_auto/redbullcom/2020/6/5/ctsejxmdtw9inp8zqqqd/valorant-ameliorer-aim-visee-astuces');
 
 -- Quiz pour League Of Legends
 INSERT INTO quiz (id, themeId, name, description, image)
-VALUES (3, 3, 'Champions de League of Legends', 'Testez vos connaissances sur les champions de LoL', '');
+VALUES (3, 3, 'Champions de League of Legends', 'Testez vos connaissances sur les champions de LoL', 'https://blog.king-jouet.com/wp-content/uploads/2021/08/thumbnail_League-Of-Legends-e1634898736732.jpg');
 
 -- Quiz pour Minecraft
 INSERT INTO quiz (id, themeId, name, description, image)
-VALUES (4, 4, 'Blocs et mobs de Minecraft', 'Savez-vous tout sur les blocs et les créatures de Minecraft ?', '');
+VALUES (4, 4, 'Blocs et mobs de Minecraft', 'Savez-vous tout sur les blocs et les créatures de Minecraft ?', 'https://top-mmorpg.fr/wp-content/uploads/2017/07/Minecraft-MMO-Game.jpg');
 
 --- Questions pour le quiz Pokémon
 INSERT INTO question (id, quizId, question, image)
-VALUES (1, 1, 'Quel est le Pokémon numéro 25 ?', '');
+VALUES (1, 1, 'Quel est le Pokémon numéro 25 ?', 'https://static.hitek.fr/img/actualite/ill_m/2097127995/quizz-pokemon-2eme-generation.jpg');
 INSERT INTO question (id, quizId, question, image)
-VALUES (2, 1, 'De quel type est Dracaufeu ?', '');
+VALUES (2, 1, 'De quel type est Dracaufeu ?', 'https://peluche-pokemon.fr/wp-content/uploads/2023/04/tous-les-types-de-pokemon.jpg');
 
 -- Questions pour le quiz Valorant
 INSERT INTO question (id, quizId, question, image)
-VALUES (3, 2, 'Quelle capacité permet à Sage de soigner ses alliés ?', '');
+VALUES (3, 2, 'Quelle capacité permet à Sage de soigner ses alliés ?', 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/ded53d6f127a00074675eb79fde95437f2c2f521-5120x1772.png?auto=format&fit=fill&q=80&w=1082');
 INSERT INTO question (id, quizId, question, image)
-VALUES (4, 2, 'Quel agent peut placer des tourelles ?', '');
+VALUES (4, 2, 'Quel agent peut placer des tourelles ?', 'https://p.turbosquid.com/ts-thumb/Qt/GV5TUm/iG/forsale1/png/1669597544/600x600/fit_q87/7a57812cb683562cf17a8a542374ae9194ffba3f/forsale1.jpg');
 
 -- Questions pour le quiz League of Legends
 INSERT INTO question (id, quizId, question, image)
-VALUES (5, 3, 'Quel champion est connu sous le nom de "La Main de Noxus" ?', '');
+VALUES (5, 3, 'Quel champion est connu sous le nom de "La Main de Noxus" ?', 'https://static.wikia.nocookie.net/leagueoflegends/images/8/82/Noxus_The_Immortal_Bastion_01.jpg/revision/latest?cb=20181118145414');
 INSERT INTO question (id, quizId, question, image)
-VALUES (6, 3, 'Quel champion utilise des shurikens comme arme principale ?', '');
+VALUES (6, 3, 'Quel champion utilise des shurikens comme arme principale ?', 'https://static.wikia.nocookie.net/leagueoflegends/images/2/28/Champions_LoL_%281%29.jpg/revision/latest?cb=20220903130004&path-prefix=fr');
 
 -- Questions pour le quiz Minecraft
 INSERT INTO question (id, quizId, question, image)
-VALUES (7, 4, 'Quel bloc est le plus résistant dans Minecraft ?', '');
+VALUES (7, 4, 'Quel bloc est le plus résistant dans Minecraft ?', 'https://minecraft.fr/wp-content/uploads/2022/01/caverne-luxuriante-minecraft-1200x651.jpg');
 INSERT INTO question (id, quizId, question, image)
-VALUES (8, 4, 'Quel mob est hostile et explose à proximité du joueur ?', '');
+VALUES (8, 4, 'Quel mob est hostile et explose à proximité du joueur ?', 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/03/Undead_preview.png/revision/latest?cb=20211015224636');
 
 -- Réponses pour les questions Pokémon
 INSERT INTO choice (id, option) VALUES (1, 'Pikachu');
