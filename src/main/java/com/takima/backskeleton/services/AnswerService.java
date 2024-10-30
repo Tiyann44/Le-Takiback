@@ -5,14 +5,18 @@ import com.takima.backskeleton.DAO.ChoiceDAO;
 import com.takima.backskeleton.DAO.QuestionDAO;
 import com.takima.backskeleton.DTO.AnswerDTO;
 import com.takima.backskeleton.DTO.AnswerMapper;
+import com.takima.backskeleton.DTO.QuestionDTO;
+import com.takima.backskeleton.DTO.QuestionMapper;
 import com.takima.backskeleton.models.Answer;
 import com.takima.backskeleton.models.Choice;
 import com.takima.backskeleton.models.Question;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class AnswerService {
@@ -82,6 +86,13 @@ public class AnswerService {
         List<Answer> answers = answerDAO.findAnswersByQuestionId(questionId);
         return answers.stream()
                 .map(AnswerMapper::toDto)
-                .collect(java.util.stream.Collectors.toList());
+                .collect(Collectors.toList());
+    }
+
+    public List<AnswerDTO> getAllAnswers() {
+        List<Answer> answers = answerDAO.findAll();
+        return answers.stream()
+                .map(AnswerMapper::toDto)
+                .collect(Collectors.toList());
     }
 }
