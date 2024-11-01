@@ -1,6 +1,7 @@
 package com.takima.backskeleton.controllers;
 
 import com.takima.backskeleton.DTO.AnswerDTO;
+import com.takima.backskeleton.DTO.QuestionDTO;
 import com.takima.backskeleton.services.AnswerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -28,6 +29,10 @@ public class AnswerController {
         return answerService.getAnswerById(answerId)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
+    }
+    @GetMapping
+    public List<AnswerDTO> getAllQuestions() {
+        return answerService.getAllAnswers();
     }
 
     @PutMapping("/{answerId}")
