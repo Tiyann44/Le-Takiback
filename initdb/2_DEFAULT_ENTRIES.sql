@@ -228,9 +228,45 @@ VALUES (24, 3, 'Votre jungler a smité votre canon, que faites-vous ?', '');
 
 -- Questions pour le quiz Minecraft
 INSERT INTO question (id, quizId, question, image)
-VALUES (25, 4, 'Quel bloc est le plus résistant dans Minecraft ?', 'https://minecraft.fr/wp-content/uploads/2022/01/caverne-luxuriante-minecraft-1200x651.jpg');
+VALUES (66, 4, 'Quel bloc est nécessaire pour construire un portail du Nether ?', '');
 INSERT INTO question (id, quizId, question, image)
-VALUES (26, 4, 'Quel mob est hostile et explose à proximité du joueur ?', 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/03/Undead_preview.png/revision/latest?cb=20211015224636');
+VALUES (67, 4, 'Quel mob lâche des perles d’Ender lorsqu’il est vaincu ?', '');
+INSERT INTO question (id, quizId, question, image)
+VALUES (68, 4, 'Quel minerai est utilisé pour fabriquer des armures et outils de qualité supérieure ?', '');
+INSERT INTO question (id, quizId, question, image)
+VALUES (69, 4, 'Quel est le nom du mob qui peut être apprivoisé pour éloigner les Creepers ?', '');
+INSERT INTO question (id, quizId, question, image)
+VALUES (70, 4, 'Quel est le nom de la dimension où se trouve l’Ender Dragon ?', '');
+INSERT INTO question (id, quizId, question, image)
+VALUES (71, 4, 'Quel type de bois est obtenu dans le biome jungle ?', '');
+INSERT INTO question (id, quizId, question, image)
+VALUES (72, 4, 'Quelle structure est associée aux pillards dans Minecraft ?', '');
+INSERT INTO question (id, quizId, question, image)
+VALUES (73, 4, 'Quel enchantement permet de miner plus rapidement sous l’eau ?', '');
+INSERT INTO question (id, quizId, question, image)
+VALUES (74, 4, 'Quel outil est nécessaire pour obtenir des gouttes de miel d’un nid d’abeilles ?', '');
+INSERT INTO question (id, quizId, question, image)
+VALUES (75, 4, 'Quelle plante permet de fabriquer de la poudre de feu dans le jeu ?', '');
+INSERT INTO question (id, quizId, question, image)
+VALUES (76, 4, 'Quel minerai peut être transformé en blocs de couleur bleue ?', '');
+INSERT INTO question (id, quizId, question, image)
+VALUES (77, 4, 'Quel type de poisson peut être pêché et utilisé pour apprivoiser un chat ?', '');
+INSERT INTO question (id, quizId, question, image)
+VALUES (78, 4, 'Quel objet est utilisé pour déplacer des objets et liquides dans le jeu ?', '');
+INSERT INTO question (id, quizId, question, image)
+VALUES (79, 4, 'Quelle créature se transforme en noyé lorsqu’elle reste trop longtemps sous l’eau ?', '');
+INSERT INTO question (id, quizId, question, image)
+VALUES (80, 4, 'Quel type de bloc est souvent utilisé pour se protéger contre les explosions ?', '');
+INSERT INTO question (id, quizId, question, image)
+VALUES (81, 4, 'Quelle plante aquatique peut être utilisée comme source de nourriture ?', '');
+INSERT INTO question (id, quizId, question, image)
+VALUES (82, 4, 'Quel type de bois est uniquement disponible dans le Nether ?', '');
+INSERT INTO question (id, quizId, question, image)
+VALUES (83, 4, 'Quel enchantement permet de respirer plus longtemps sous l’eau ?', '');
+INSERT INTO question (id, quizId, question, image)
+VALUES (84, 4, 'Quelle ressource est nécessaire pour crafter des torches ?', '');
+INSERT INTO question (id, quizId, question, image)
+VALUES (85, 4, 'Quel objet est utilisé pour enchanter des objets en utilisant de l’expérience ?', '');
 
 -- Réponses pour les questions Pokémon
 -- Question 1
@@ -577,15 +613,127 @@ INSERT INTO choice (id, option) VALUES (94, 'je l''insulte');
 INSERT INTO choice (id, option) VALUES (95, 'Je flash sur place et lance un call ff');
 INSERT INTO choice (id, option) VALUES (96, 'Je le spam ping, l''insulte, et passe le reste de la game à le suivre dans sa jungle pour lui voler ses camps, tout en donnant sa position à l''ennemi dans le chat all');
 -- Réponses pour les questions Minecraft
-INSERT INTO choice (id, option) VALUES (97, 'Bedrock');
-INSERT INTO choice (id, option) VALUES (98, 'Obsidienne');
-INSERT INTO choice (id, option) VALUES (99, 'Pierre taillée');
-INSERT INTO choice (id, option) VALUES (100, 'Bois');
+-- Choix pour les Questions Minecraft
+-- Choix pour la Question 66
+INSERT INTO choice (id, option) VALUES (261, 'Obsidienne');
+INSERT INTO choice (id, option) VALUES (262, 'Diamant');
+INSERT INTO choice (id, option) VALUES (263, 'Pierre');
+INSERT INTO choice (id, option) VALUES (264, 'Fer');
 
-INSERT INTO choice (id, option) VALUES (101, 'Creeper');
-INSERT INTO choice (id, option) VALUES (102, 'Zombie');
-INSERT INTO choice (id, option) VALUES (103, 'Squelette');
-INSERT INTO choice (id, option) VALUES (104, 'Araignée');
+-- Choix pour la Question 67
+INSERT INTO choice (id, option) VALUES (265, 'Enderman');
+INSERT INTO choice (id, option) VALUES (266, 'Zombie');
+INSERT INTO choice (id, option) VALUES (267, 'Creeper');
+INSERT INTO choice (id, option) VALUES (268, 'Squelette');
+
+-- Choix pour la Question 68
+INSERT INTO choice (id, option) VALUES (269, 'Netherite');
+INSERT INTO choice (id, option) VALUES (270, 'Charbon');
+INSERT INTO choice (id, option) VALUES (271, 'Cuivre');
+INSERT INTO choice (id, option) VALUES (272, 'Quartz');
+
+-- Choix pour la Question 69
+INSERT INTO choice (id, option) VALUES (273, 'Chat');
+INSERT INTO choice (id, option) VALUES (274, 'Loup');
+INSERT INTO choice (id, option) VALUES (275, 'Renard');
+INSERT INTO choice (id, option) VALUES (276, 'Cheval');
+
+-- Choix pour la Question 70
+INSERT INTO choice (id, option) VALUES (277, 'L’End');
+INSERT INTO choice (id, option) VALUES (278, 'Le Nether');
+INSERT INTO choice (id, option) VALUES (279, 'L’Overworld');
+INSERT INTO choice (id, option) VALUES (280, 'La Forêt Sombre');
+
+-- Choix pour la Question 71
+INSERT INTO choice (id, option) VALUES (281, 'Bois de jungle');
+INSERT INTO choice (id, option) VALUES (282, 'Bois de bouleau');
+INSERT INTO choice (id, option) VALUES (283, 'Bois de chêne');
+INSERT INTO choice (id, option) VALUES (284, 'Bois d’acacia');
+
+-- Choix pour la Question 72
+INSERT INTO choice (id, option) VALUES (285, 'Avant-poste des pillards');
+INSERT INTO choice (id, option) VALUES (286, 'Temple du désert');
+INSERT INTO choice (id, option) VALUES (287, 'Monument sous-marin');
+INSERT INTO choice (id, option) VALUES (288, 'Forteresse du Nether');
+
+-- Choix pour la Question 73
+INSERT INTO choice (id, option) VALUES (289, 'Efficacité');
+INSERT INTO choice (id, option) VALUES (290, 'Apnée');
+INSERT INTO choice (id, option) VALUES (291, 'Solidité');
+INSERT INTO choice (id, option) VALUES (292, 'Toucher de soie');
+
+-- Choix pour la Question 74
+INSERT INTO choice (id, option) VALUES (293, 'Bouteille en verre');
+INSERT INTO choice (id, option) VALUES (294, 'Épée');
+INSERT INTO choice (id, option) VALUES (295, 'Cisaille');
+INSERT INTO choice (id, option) VALUES (296, 'Hache');
+
+-- Choix pour la Question 75
+INSERT INTO choice (id, option) VALUES (297, 'Fleur de feu');
+INSERT INTO choice (id, option) VALUES (298, 'Bambou');
+INSERT INTO choice (id, option) VALUES (299, 'Cactus');
+INSERT INTO choice (id, option) VALUES (300, 'Canne à sucre');
+
+-- Choix pour la Question 76
+INSERT INTO choice (id, option) VALUES (301, 'Lapis-lazuli');
+INSERT INTO choice (id, option) VALUES (302, 'Or');
+INSERT INTO choice (id, option) VALUES (303, 'Fer');
+INSERT INTO choice (id, option) VALUES (304, 'Cuivre');
+
+-- Choix pour la Question 77
+INSERT INTO choice (id, option) VALUES (305, 'Poisson tropical');
+INSERT INTO choice (id, option) VALUES (306, 'Morue');
+INSERT INTO choice (id, option) VALUES (307, 'Saumon');
+INSERT INTO choice (id, option) VALUES (308, 'Calmar');
+
+-- Choix pour la Question 78
+INSERT INTO choice (id, option) VALUES (309, 'Entonnoir');
+INSERT INTO choice (id, option) VALUES (310, 'Four');
+INSERT INTO choice (id, option) VALUES (311, 'Échelle');
+INSERT INTO choice (id, option) VALUES (312, 'Trappe');
+
+-- Choix pour la Question 79
+INSERT INTO choice (id, option) VALUES (313, 'Zombie');
+INSERT INTO choice (id, option) VALUES (314, 'Squelette');
+INSERT INTO choice (id, option) VALUES (315, 'Zombie noyé');
+INSERT INTO choice (id, option) VALUES (316, 'Sorcière');
+
+-- Choix pour la Question 80
+INSERT INTO choice (id, option) VALUES (317, 'Pierre');
+INSERT INTO choice (id, option) VALUES (318, 'Terre');
+INSERT INTO choice (id, option) VALUES (319, 'Obsidienne');
+INSERT INTO choice (id, option) VALUES (320, 'Verre');
+
+-- Choix pour la Question 81
+INSERT INTO choice (id, option) VALUES (321, 'Kelp');
+INSERT INTO choice (id, option) VALUES (322, 'Champignon');
+INSERT INTO choice (id, option) VALUES (323, 'Blé');
+INSERT INTO choice (id, option) VALUES (324, 'Betterave');
+
+-- Choix pour la Question 82
+INSERT INTO choice (id, option) VALUES (325, 'Bois de trémelle');
+INSERT INTO choice (id, option) VALUES (326, 'Bois pourpre');
+INSERT INTO choice (id, option) VALUES (327, 'Bois de la jungle');
+INSERT INTO choice (id, option) VALUES (328, 'Bois de chêne');
+
+-- Choix pour la Question 83
+INSERT INTO choice (id, option) VALUES (329, 'Apnée');
+INSERT INTO choice (id, option) VALUES (330, 'Châtiment');
+INSERT INTO choice (id, option) VALUES (331, 'Protection');
+INSERT INTO choice (id, option) VALUES (332, 'Tranchant');
+
+-- Choix pour la Question 84
+INSERT INTO choice (id, option) VALUES (333, 'Charbon');
+INSERT INTO choice (id, option) VALUES (334, 'Pierre');
+INSERT INTO choice (id, option) VALUES (335, 'Sable');
+INSERT INTO choice (id, option) VALUES (336, 'Cuivre');
+
+-- Choix pour la Question 85
+INSERT INTO choice (id, option) VALUES (337, 'Table d’enchantement');
+INSERT INTO choice (id, option) VALUES (338, 'Enclume');
+INSERT INTO choice (id, option) VALUES (339, 'Four');
+INSERT INTO choice (id, option) VALUES (340, 'Coffre');
+
 
 -- Réponses correctes pour le quiz Pokémon
 -- Bloc 10
@@ -939,139 +1087,106 @@ INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (95, 24, 95, fal
 INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (96, 24, 96, false);
 
 
--- Réponses correctes pour le quiz Minecraft
--- Bloc 9
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (97, 25, 97, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (98, 25, 98, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (99, 25, 99, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (100, 25, 100, false);
-
-
--- Bloc 30
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (181, 46, 181, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (182, 46, 182, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (183, 46, 183, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (184, 46, 184, false);
-
--- Bloc 31
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (185, 47, 185, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (186, 47, 186, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (187, 47, 187, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (188, 47, 188, false);
-
--- Bloc 32
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (189, 48, 189, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (190, 48, 190, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (191, 48, 191, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (192, 48, 192, false);
-
--- Bloc 33
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (193, 49, 193, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (194, 49, 194, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (195, 49, 195, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (196, 49, 196, false);
-
--- Bloc 34
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (197, 50, 197, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (198, 50, 198, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (199, 50, 199, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (200, 50, 200, false);
-
--- Bloc 35
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (201, 51, 201, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (202, 51, 202, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (203, 51, 203, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (204, 51, 204, false);
-
--- Bloc 36
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (205, 52, 205, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (206, 52, 206, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (207, 52, 207, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (208, 52, 208, false);
-
--- Bloc 37
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (209, 53, 209, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (210, 53, 210, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (211, 53, 211, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (212, 53, 212, false);
-
--- Bloc 38
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (213, 54, 213, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (214, 54, 214, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (215, 54, 215, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (216, 54, 216, false);
-
--- Bloc 39
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (217, 55, 217, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (218, 55, 218, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (219, 55, 219, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (220, 55, 220, false);
-
--- Bloc 40
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (221, 56, 221, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (222, 56, 222, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (223, 56, 223, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (224, 56, 224, false);
-
--- Bloc 41
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (225, 57, 225, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (226, 57, 226, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (227, 57, 227, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (228, 57, 228, false);
-
--- Bloc 42
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (229, 58, 229, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (230, 58, 230, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (231, 58, 231, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (232, 58, 232, false);
-
--- Bloc 43
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (233, 59, 233, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (234, 59, 234, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (235, 59, 235, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (236, 59, 236, false);
-
--- Bloc 44
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (237, 60, 237, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (238, 60, 238, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (239, 60, 239, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (240, 60, 240, false);
-
--- Bloc 45
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (241, 61, 241, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (242, 61, 242, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (243, 61, 243, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (244, 61, 244, false);
-
--- Bloc 46
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (245, 62, 245, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (246, 62, 246, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (247, 62, 247, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (248, 62, 248, false);
-
--- Bloc 47
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (249, 63, 249, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (250, 63, 250, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (251, 63, 251, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (252, 63, 252, false);
-
--- Bloc 48
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (253, 64, 253, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (254, 64, 254, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (255, 64, 255, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (256, 64, 256, false);
-
--- Bloc 49
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (257, 65, 257, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (258, 65, 258, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (259, 65, 259, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (260, 65, 260, false);
-
--- Bloc 50
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (261, 66, 261, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (262, 66, 262, true);
+-- Réponses pour les Questions Minecraft
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (261, 66, 261, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (262, 66, 262, false);
 INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (263, 66, 263, false);
 INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (264, 66, 264, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (265, 67, 265, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (266, 67, 266, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (267, 67, 267, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (268, 67, 268, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (269, 68, 269, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (270, 68, 270, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (271, 68, 271, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (272, 68, 272, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (273, 69, 273, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (274, 69, 274, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (275, 69, 275, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (276, 69, 276, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (277, 70, 277, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (278, 70, 278, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (279, 70, 279, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (280, 70, 280, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (281, 71, 281, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (282, 71, 282, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (283, 71, 283, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (284, 71, 284, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (285, 72, 285, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (286, 72, 286, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (287, 72, 287, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (288, 72, 288, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (289, 73, 289, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (290, 73, 290, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (291, 73, 291, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (292, 73, 292, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (293, 74, 293, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (294, 74, 294, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (295, 74, 295, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (296, 74, 296, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (297, 75, 297, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (298, 75, 298, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (299, 75, 299, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (300, 75, 300, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (301, 76, 301, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (302, 76, 302, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (303, 76, 303, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (304, 76, 304, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (305, 77, 305, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (306, 77, 306, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (307, 77, 307, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (308, 77, 308, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (309, 78, 309, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (310, 78, 310, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (311, 78, 311, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (312, 78, 312, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (313, 79, 313, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (314, 79, 314, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (315, 79, 315, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (316, 79, 316, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (317, 80, 317, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (318, 80, 318, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (319, 80, 319, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (320, 80, 320, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (321, 81, 321, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (322, 81, 322, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (323, 81, 323, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (324, 81, 324, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (325, 82, 325, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (326, 82, 326, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (327, 82, 327, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (328, 82, 328, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (329, 83, 329, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (330, 83, 330, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (331, 83, 331, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (332, 83, 332, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (333, 84, 333, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (334, 84, 334, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (335, 84, 335, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (336, 84, 336, false);
+
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (337, 85, 337, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (338, 85, 338, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (339, 85, 339, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (340, 85, 340, false);
 
 
 INSERT INTO score (id, userId, quizId, score, message) VALUES (1, 1, 1, 90, 'Trop fort !');
