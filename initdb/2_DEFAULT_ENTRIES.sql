@@ -104,10 +104,85 @@ INSERT INTO question (id, quizId, question, image)
 VALUES (45, 1, 'Quel est le type de la première arène dans Heartgold/Soulsilver ?', '');
 
 -- Questions pour le quiz Valorant
+-- Question 46
 INSERT INTO question (id, quizId, question, image)
-VALUES (3, 2, 'Quelle capacité permet à Sage de soigner ses alliés ?', 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/ded53d6f127a00074675eb79fde95437f2c2f521-5120x1772.png?auto=format&fit=fill&q=80&w=1082');
+VALUES (46, 2, 'Quelle capacité permet à Sage de soigner ses alliés ?', 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/ded53d6f127a00074675eb79fde95437f2c2f521-5120x1772.png?auto=format&fit=fill&q=80&w=1082');
+
+-- Question 47
 INSERT INTO question (id, quizId, question, image)
-VALUES (4, 2, 'Quel agent peut placer des tourelles ?', 'https://p.turbosquid.com/ts-thumb/Qt/GV5TUm/iG/forsale1/png/1669597544/600x600/fit_q87/7a57812cb683562cf17a8a542374ae9194ffba3f/forsale1.jpg');
+VALUES (47, 2, 'Quel agent possède l’ultime "Empress" ?', '');
+
+-- Question 48
+INSERT INTO question (id, quizId, question, image)
+VALUES (48, 2, 'Quelle est l’arme de base de Reyna ?', '');
+
+-- Question 49
+INSERT INTO question (id, quizId, question, image)
+VALUES (49, 2, 'Quelle capacité de Jett lui permet de se déplacer rapidement ?', '');
+
+-- Question 50
+INSERT INTO question (id, quizId, question, image)
+VALUES (50, 2, 'Quel agent peut déployer un drone pour repérer les ennemis ?', '');
+
+-- Question 51
+INSERT INTO question (id, quizId, question, image)
+VALUES (51, 2, 'Quelle est la capacité ultime de Phoenix ?', '');
+
+-- Question 52
+INSERT INTO question (id, quizId, question, image)
+VALUES (52, 2, 'Quel agent est spécialisé dans les fumigènes ?', '');
+
+-- Question 53
+INSERT INTO question (id, quizId, question, image)
+VALUES (53, 2, 'Quelle capacité permet à Raze de lancer des explosifs ?', '');
+
+-- Question 54
+INSERT INTO question (id, quizId, question, image)
+VALUES (54, 2, 'Quel agent peut rendre une zone silencieuse ?', '');
+
+-- Question 55
+INSERT INTO question (id, quizId, question, image)
+VALUES (55, 2, 'Quelle capacité de Cypher révèle la position des ennemis ?', '');
+
+-- Question 56
+INSERT INTO question (id, quizId, question, image)
+VALUES (56, 2, 'Quel agent peut ressusciter un coéquipier ?', '');
+
+-- Question 57
+INSERT INTO question (id, quizId, question, image)
+VALUES (57, 2, 'Quelle est la capacité qui aveugle les ennemis de Breach ?', '');
+
+-- Question 58
+INSERT INTO question (id, quizId, question, image)
+VALUES (58, 2, 'Quel agent est capable de planter un C4 pour détruire des obstacles ?', '');
+
+-- Question 59
+INSERT INTO question (id, quizId, question, image)
+VALUES (59, 2, 'Quelle capacité de Killjoy peut détecter des ennemis à proximité ?', '');
+
+-- Question 60
+INSERT INTO question (id, quizId, question, image)
+VALUES (60, 2, 'Quel agent peut invoquer des incendies pour blesser les ennemis ?', '');
+
+-- Question 61
+INSERT INTO question (id, quizId, question, image)
+VALUES (61, 2, 'Quel agent possède un drone qui peut tirer des fléchettes révélatrices ?', '');
+
+-- Question 62
+INSERT INTO question (id, quizId, question, image)
+VALUES (62, 2, 'Quelle capacité d’Omen lui permet de se téléporter ?', '');
+
+-- Question 63
+INSERT INTO question (id, quizId, question, image)
+VALUES (63, 2, 'Quel agent peut poser un piège qui ralentit les ennemis ?', '');
+
+-- Question 64
+INSERT INTO question (id, quizId, question, image)
+VALUES (64, 2, 'Quel agent peut aveugler les ennemis avec un flash qui traverse les murs ?', '');
+
+-- Question 65
+INSERT INTO question (id, quizId, question, image)
+VALUES (65, 2, 'Quelle est la capacité ultime de Brimstone qui provoque une explosion ?', '');
 
 -- Questions pour le quiz League of Legends
 INSERT INTO question (id, quizId, question, image)
@@ -278,269 +353,128 @@ INSERT INTO choice (id, option) VALUES (178, 'Eau');
 INSERT INTO choice (id, option) VALUES (179, 'Insecte');
 INSERT INTO choice (id, option) VALUES (180, 'Vol');
 
--- Bloc 19
-INSERT INTO choice (id, option) VALUES (177, 'Option');
-INSERT INTO choice (id, option) VALUES (178, 'Option');
-INSERT INTO choice (id, option) VALUES (179, 'Option');
-INSERT INTO choice (id, option) VALUES (180, 'Option');
-
--- Bloc 20
-INSERT INTO choice (id, option) VALUES (181, 'Option');
-INSERT INTO choice (id, option) VALUES (182, 'Option');
-INSERT INTO choice (id, option) VALUES (183, 'Option');
-INSERT INTO choice (id, option) VALUES (184, 'Option');
-
--- Bloc 21
-INSERT INTO choice (id, option) VALUES (185, 'Option');
-INSERT INTO choice (id, option) VALUES (186, 'Option');
-INSERT INTO choice (id, option) VALUES (187, 'Option');
-INSERT INTO choice (id, option) VALUES (188, 'Option');
-
--- Bloc 22
-INSERT INTO choice (id, option) VALUES (189, 'Option');
-INSERT INTO choice (id, option) VALUES (190, 'Option');
-INSERT INTO choice (id, option) VALUES (191, 'Option');
-INSERT INTO choice (id, option) VALUES (192, 'Option');
-
--- Bloc 23
-INSERT INTO choice (id, option) VALUES (193, 'Option');
-INSERT INTO choice (id, option) VALUES (194, 'Option');
-INSERT INTO choice (id, option) VALUES (195, 'Option');
-INSERT INTO choice (id, option) VALUES (196, 'Option');
-
--- Bloc 24
-INSERT INTO choice (id, option) VALUES (197, 'Option');
-INSERT INTO choice (id, option) VALUES (198, 'Option');
-INSERT INTO choice (id, option) VALUES (199, 'Option');
-INSERT INTO choice (id, option) VALUES (200, 'Option');
-
--- Bloc 25
-INSERT INTO choice (id, option) VALUES (201, 'Option');
-INSERT INTO choice (id, option) VALUES (202, 'Option');
-INSERT INTO choice (id, option) VALUES (203, 'Option');
-INSERT INTO choice (id, option) VALUES (204, 'Option');
-
--- Bloc 26
-INSERT INTO choice (id, option) VALUES (205, 'Option');
-INSERT INTO choice (id, option) VALUES (206, 'Option');
-INSERT INTO choice (id, option) VALUES (207, 'Option');
-INSERT INTO choice (id, option) VALUES (208, 'Option');
-
--- Bloc 27
-INSERT INTO choice (id, option) VALUES (209, 'Option');
-INSERT INTO choice (id, option) VALUES (210, 'Option');
-INSERT INTO choice (id, option) VALUES (211, 'Option');
-INSERT INTO choice (id, option) VALUES (212, 'Option');
-
--- Bloc 28
-INSERT INTO choice (id, option) VALUES (213, 'Option');
-INSERT INTO choice (id, option) VALUES (214, 'Option');
-INSERT INTO choice (id, option) VALUES (215, 'Option');
-INSERT INTO choice (id, option) VALUES (216, 'Option');
-
--- Bloc 29
-INSERT INTO choice (id, option) VALUES (217, 'Option');
-INSERT INTO choice (id, option) VALUES (218, 'Option');
-INSERT INTO choice (id, option) VALUES (219, 'Option');
-INSERT INTO choice (id, option) VALUES (220, 'Option');
-
--- Bloc 30
-INSERT INTO choice (id, option) VALUES (221, 'Option');
-INSERT INTO choice (id, option) VALUES (222, 'Option');
-INSERT INTO choice (id, option) VALUES (223, 'Option');
-INSERT INTO choice (id, option) VALUES (224, 'Option');
-
--- Bloc 31
-INSERT INTO choice (id, option) VALUES (225, 'Option');
-INSERT INTO choice (id, option) VALUES (226, 'Option');
-INSERT INTO choice (id, option) VALUES (227, 'Option');
-INSERT INTO choice (id, option) VALUES (228, 'Option');
-
--- Bloc 32
-INSERT INTO choice (id, option) VALUES (229, 'Option');
-INSERT INTO choice (id, option) VALUES (230, 'Option');
-INSERT INTO choice (id, option) VALUES (231, 'Option');
-INSERT INTO choice (id, option) VALUES (232, 'Option');
-
--- Bloc 33
-INSERT INTO choice (id, option) VALUES (233, 'Option');
-INSERT INTO choice (id, option) VALUES (234, 'Option');
-INSERT INTO choice (id, option) VALUES (235, 'Option');
-INSERT INTO choice (id, option) VALUES (236, 'Option');
-
--- Bloc 34
-INSERT INTO choice (id, option) VALUES (237, 'Option');
-INSERT INTO choice (id, option) VALUES (238, 'Option');
-INSERT INTO choice (id, option) VALUES (239, 'Option');
-INSERT INTO choice (id, option) VALUES (240, 'Option');
-
--- Bloc 35
-INSERT INTO choice (id, option) VALUES (241, 'Option');
-INSERT INTO choice (id, option) VALUES (242, 'Option');
-INSERT INTO choice (id, option) VALUES (243, 'Option');
-INSERT INTO choice (id, option) VALUES (244, 'Option');
-
--- Bloc 36
-INSERT INTO choice (id, option) VALUES (245, 'Option');
-INSERT INTO choice (id, option) VALUES (246, 'Option');
-INSERT INTO choice (id, option) VALUES (247, 'Option');
-INSERT INTO choice (id, option) VALUES (248, 'Option');
-
--- Bloc 37
-INSERT INTO choice (id, option) VALUES (249, 'Option');
-INSERT INTO choice (id, option) VALUES (250, 'Option');
-INSERT INTO choice (id, option) VALUES (251, 'Option');
-INSERT INTO choice (id, option) VALUES (252, 'Option');
-
--- Bloc 38
-INSERT INTO choice (id, option) VALUES (253, 'Option');
-INSERT INTO choice (id, option) VALUES (254, 'Option');
-INSERT INTO choice (id, option) VALUES (255, 'Option');
-INSERT INTO choice (id, option) VALUES (256, 'Option');
-
--- Bloc 39
-INSERT INTO choice (id, option) VALUES (257, 'Option');
-INSERT INTO choice (id, option) VALUES (258, 'Option');
-INSERT INTO choice (id, option) VALUES (259, 'Option');
-INSERT INTO choice (id, option) VALUES (260, 'Option');
-
--- Bloc 40
-INSERT INTO choice (id, option) VALUES (261, 'Option');
-INSERT INTO choice (id, option) VALUES (262, 'Option');
-INSERT INTO choice (id, option) VALUES (263, 'Option');
-INSERT INTO choice (id, option) VALUES (264, 'Option');
-
--- Bloc 41
-INSERT INTO choice (id, option) VALUES (265, 'Option');
-INSERT INTO choice (id, option) VALUES (266, 'Option');
-INSERT INTO choice (id, option) VALUES (267, 'Option');
-INSERT INTO choice (id, option) VALUES (268, 'Option');
-
--- Bloc 42
-INSERT INTO choice (id, option) VALUES (269, 'Option');
-INSERT INTO choice (id, option) VALUES (270, 'Option');
-INSERT INTO choice (id, option) VALUES (271, 'Option');
-INSERT INTO choice (id, option) VALUES (272, 'Option');
-
--- Bloc 43
-INSERT INTO choice (id, option) VALUES (273, 'Option');
-INSERT INTO choice (id, option) VALUES (274, 'Option');
-INSERT INTO choice (id, option) VALUES (275, 'Option');
-INSERT INTO choice (id, option) VALUES (276, 'Option');
-
--- Bloc 44
-INSERT INTO choice (id, option) VALUES (277, 'Option');
-INSERT INTO choice (id, option) VALUES (278, 'Option');
-INSERT INTO choice (id, option) VALUES (279, 'Option');
-INSERT INTO choice (id, option) VALUES (280, 'Option');
-
--- Bloc 45
-INSERT INTO choice (id, option) VALUES (281, 'Option');
-INSERT INTO choice (id, option) VALUES (282, 'Option');
-INSERT INTO choice (id, option) VALUES (283, 'Option');
-INSERT INTO choice (id, option) VALUES (284, 'Option');
-
--- Bloc 46
-INSERT INTO choice (id, option) VALUES (285, 'Option');
-INSERT INTO choice (id, option) VALUES (286, 'Option');
-INSERT INTO choice (id, option) VALUES (287, 'Option');
-INSERT INTO choice (id, option) VALUES (288, 'Option');
-
--- Bloc 47
-INSERT INTO choice (id, option) VALUES (289, 'Option');
-INSERT INTO choice (id, option) VALUES (290, 'Option');
-INSERT INTO choice (id, option) VALUES (291, 'Option');
-INSERT INTO choice (id, option) VALUES (292, 'Option');
-
--- Bloc 48
-INSERT INTO choice (id, option) VALUES (293, 'Option');
-INSERT INTO choice (id, option) VALUES (294, 'Option');
-INSERT INTO choice (id, option) VALUES (295, 'Option');
-INSERT INTO choice (id, option) VALUES (296, 'Option');
-
--- Bloc 49
-INSERT INTO choice (id, option) VALUES (297, 'Option');
-INSERT INTO choice (id, option) VALUES (298, 'Option');
-INSERT INTO choice (id, option) VALUES (299, 'Option');
-INSERT INTO choice (id, option) VALUES (300, 'Option');
-
--- Bloc 50
-INSERT INTO choice (id, option) VALUES (301, 'Option');
-INSERT INTO choice (id, option) VALUES (302, 'Option');
-INSERT INTO choice (id, option) VALUES (303, 'Option');
-INSERT INTO choice (id, option) VALUES (304, 'Option');
-
--- Bloc 51
-INSERT INTO choice (id, option) VALUES (305, 'Option');
-INSERT INTO choice (id, option) VALUES (306, 'Option');
-INSERT INTO choice (id, option) VALUES (307, 'Option');
-INSERT INTO choice (id, option) VALUES (308, 'Option');
-
--- Bloc 52
-INSERT INTO choice (id, option) VALUES (309, 'Option');
-INSERT INTO choice (id, option) VALUES (310, 'Option');
-INSERT INTO choice (id, option) VALUES (311, 'Option');
-INSERT INTO choice (id, option) VALUES (312, 'Option');
-
--- Bloc 53
-INSERT INTO choice (id, option) VALUES (313, 'Option');
-INSERT INTO choice (id, option) VALUES (314, 'Option');
-INSERT INTO choice (id, option) VALUES (315, 'Option');
-INSERT INTO choice (id, option) VALUES (316, 'Option');
-
--- Bloc 54
-INSERT INTO choice (id, option) VALUES (317, 'Option');
-INSERT INTO choice (id, option) VALUES (318, 'Option');
-INSERT INTO choice (id, option) VALUES (319, 'Option');
-INSERT INTO choice (id, option) VALUES (320, 'Option');
-
--- Bloc 55
-INSERT INTO choice (id, option) VALUES (321, 'Option');
-INSERT INTO choice (id, option) VALUES (322, 'Option');
-INSERT INTO choice (id, option) VALUES (323, 'Option');
-INSERT INTO choice (id, option) VALUES (324, 'Option');
-
--- Bloc 56
-INSERT INTO choice (id, option) VALUES (325, 'Option');
-INSERT INTO choice (id, option) VALUES (326, 'Option');
-INSERT INTO choice (id, option) VALUES (327, 'Option');
-INSERT INTO choice (id, option) VALUES (328, 'Option');
-
--- Bloc 57
-INSERT INTO choice (id, option) VALUES (329, 'Option');
-INSERT INTO choice (id, option) VALUES (330, 'Option');
-INSERT INTO choice (id, option) VALUES (331, 'Option');
-INSERT INTO choice (id, option) VALUES (332, 'Option');
-
--- Bloc 58
-INSERT INTO choice (id, option) VALUES (333, 'Option');
-INSERT INTO choice (id, option) VALUES (334, 'Option');
-INSERT INTO choice (id, option) VALUES (335, 'Option');
-INSERT INTO choice (id, option) VALUES (336, 'Option');
-
--- Bloc 59
-INSERT INTO choice (id, option) VALUES (337, 'Option');
-INSERT INTO choice (id, option) VALUES (338, 'Option');
-INSERT INTO choice (id, option) VALUES (339, 'Option');
-INSERT INTO choice (id, option) VALUES (340, 'Option');
-
--- Bloc 60
-INSERT INTO choice (id, option) VALUES (341, 'Option');
-INSERT INTO choice (id, option) VALUES (342, 'Option');
-INSERT INTO choice (id, option) VALUES (343, 'Option');
-INSERT INTO choice (id, option) VALUES (344, 'Option');
-
 
 -- Réponses pour les questions Valorant
-INSERT INTO choice (id, option) VALUES (9, 'Soin d’Orbe');
-INSERT INTO choice (id, option) VALUES (10, 'Barrière de glace');
-INSERT INTO choice (id, option) VALUES (11, 'Orbe de lenteur');
-INSERT INTO choice (id, option) VALUES (12, 'Orbe de résurrection');
+-- Choix pour la Question 46
+INSERT INTO choice (id, option) VALUES (181, 'Soin d’Orbe');
+INSERT INTO choice (id, option) VALUES (182, 'Barrière de glace');
+INSERT INTO choice (id, option) VALUES (183, 'Orbe de lenteur');
+INSERT INTO choice (id, option) VALUES (184, 'Orbe de résurrection');
 
-INSERT INTO choice (id, option) VALUES (13, 'Killjoy');
-INSERT INTO choice (id, option) VALUES (14, 'Sova');
-INSERT INTO choice (id, option) VALUES (15, 'Phoenix');
-INSERT INTO choice (id, option) VALUES (16, 'Brimstone');
+-- Choix pour la Question 47
+INSERT INTO choice (id, option) VALUES (185, 'Reyna');
+INSERT INTO choice (id, option) VALUES (186, 'Phoenix');
+INSERT INTO choice (id, option) VALUES (187, 'Jett');
+INSERT INTO choice (id, option) VALUES (188, 'Viper');
+
+-- Choix pour la Question 48
+INSERT INTO choice (id, option) VALUES (189, 'Ghost');
+INSERT INTO choice (id, option) VALUES (190, 'Frenzy');
+INSERT INTO choice (id, option) VALUES (191, 'Classic');
+INSERT INTO choice (id, option) VALUES (192, 'Sheriff');
+
+-- Choix pour la Question 49
+INSERT INTO choice (id, option) VALUES (193, 'Courant ascendant');
+INSERT INTO choice (id, option) VALUES (194, 'Brise-ciel');
+INSERT INTO choice (id, option) VALUES (195, 'Vent arrière');
+INSERT INTO choice (id, option) VALUES (196, 'Explosion de vent');
+
+-- Choix pour la Question 50
+INSERT INTO choice (id, option) VALUES (197, 'Sova');
+INSERT INTO choice (id, option) VALUES (198, 'Cypher');
+INSERT INTO choice (id, option) VALUES (199, 'Omen');
+INSERT INTO choice (id, option) VALUES (200, 'Phoenix');
+
+-- Choix pour la Question 51
+INSERT INTO choice (id, option) VALUES (201, 'Run It Back');
+INSERT INTO choice (id, option) VALUES (202, 'Blaze');
+INSERT INTO choice (id, option) VALUES (203, 'Curveball');
+INSERT INTO choice (id, option) VALUES (204, 'Hot Hands');
+
+-- Choix pour la Question 52
+INSERT INTO choice (id, option) VALUES (205, 'Brimstone');
+INSERT INTO choice (id, option) VALUES (206, 'Omen');
+INSERT INTO choice (id, option) VALUES (207, 'Viper');
+INSERT INTO choice (id, option) VALUES (208, 'Sova');
+
+-- Choix pour la Question 53
+INSERT INTO choice (id, option) VALUES (209, 'Boom Bot');
+INSERT INTO choice (id, option) VALUES (210, 'Blast Pack');
+INSERT INTO choice (id, option) VALUES (211, 'Showstopper');
+INSERT INTO choice (id, option) VALUES (212, 'Paint Shells');
+
+-- Choix pour la Question 54
+INSERT INTO choice (id, option) VALUES (213, 'Cypher');
+INSERT INTO choice (id, option) VALUES (214, 'Omen');
+INSERT INTO choice (id, option) VALUES (215, 'Sova');
+INSERT INTO choice (id, option) VALUES (216, 'Jett');
+
+-- Choix pour la Question 55
+INSERT INTO choice (id, option) VALUES (217, 'Spycam');
+INSERT INTO choice (id, option) VALUES (218, 'Trapwire');
+INSERT INTO choice (id, option) VALUES (219, 'Recon Bolt');
+INSERT INTO choice (id, option) VALUES (220, 'Alarm Bot');
+
+-- Choix pour la Question 56
+INSERT INTO choice (id, option) VALUES (221, 'Sage');
+INSERT INTO choice (id, option) VALUES (222, 'Phoenix');
+INSERT INTO choice (id, option) VALUES (223, 'Breach');
+INSERT INTO choice (id, option) VALUES (224, 'Cypher');
+
+-- Choix pour la Question 57
+INSERT INTO choice (id, option) VALUES (225, 'Flashpoint');
+INSERT INTO choice (id, option) VALUES (226, 'Fault Line');
+INSERT INTO choice (id, option) VALUES (227, 'Rolling Thunder');
+INSERT INTO choice (id, option) VALUES (228, 'Aftershock');
+
+-- Choix pour la Question 58
+INSERT INTO choice (id, option) VALUES (229, 'Raze');
+INSERT INTO choice (id, option) VALUES (230, 'Brimstone');
+INSERT INTO choice (id, option) VALUES (231, 'Sage');
+INSERT INTO choice (id, option) VALUES (232, 'Jett');
+
+-- Choix pour la Question 59
+INSERT INTO choice (id, option) VALUES (233, 'Alarm Bot');
+INSERT INTO choice (id, option) VALUES (234, 'Nanoswarm');
+INSERT INTO choice (id, option) VALUES (235, 'Turret');
+INSERT INTO choice (id, option) VALUES (236, 'Lockdown');
+
+-- Choix pour la Question 60
+INSERT INTO choice (id, option) VALUES (237, 'Phoenix');
+INSERT INTO choice (id, option) VALUES (238, 'Brimstone');
+INSERT INTO choice (id, option) VALUES (239, 'Omen');
+INSERT INTO choice (id, option) VALUES (240, 'Viper');
+
+-- Choix pour la Question 61
+INSERT INTO choice (id, option) VALUES (241, 'Recon Bolt');
+INSERT INTO choice (id, option) VALUES (242, 'Owl Drone');
+INSERT INTO choice (id, option) VALUES (243, 'Trapwire');
+INSERT INTO choice (id, option) VALUES (244, 'Cage');
+
+-- Choix pour la Question 62
+INSERT INTO choice (id, option) VALUES (245, 'Shrouded Step');
+INSERT INTO choice (id, option) VALUES (246, 'Dark Cover');
+INSERT INTO choice (id, option) VALUES (247, 'Paranoia');
+INSERT INTO choice (id, option) VALUES (248, 'From the Shadows');
+
+-- Choix pour la Question 63
+INSERT INTO choice (id, option) VALUES (249, 'Cypher');
+INSERT INTO choice (id, option) VALUES (250, 'Killjoy');
+INSERT INTO choice (id, option) VALUES (251, 'Sage');
+INSERT INTO choice (id, option) VALUES (252, 'Reyna');
+
+-- Choix pour la Question 64
+INSERT INTO choice (id, option) VALUES (253, 'Phoenix');
+INSERT INTO choice (id, option) VALUES (254, 'Yoru');
+INSERT INTO choice (id, option) VALUES (255, 'Skye');
+INSERT INTO choice (id, option) VALUES (256, 'Breach');
+
+-- Choix pour la Question 65
+INSERT INTO choice (id, option) VALUES (257, 'Orbital Strike');
+INSERT INTO choice (id, option) VALUES (258, 'Incendiary');
+INSERT INTO choice (id, option) VALUES (259, 'Stim Beacon');
+INSERT INTO choice (id, option) VALUES (260, 'Sky Smoke');
+
 
 -- Réponses pour les questions League of Legends
 INSERT INTO choice (id, option) VALUES (17, 'Darius');
@@ -775,15 +709,125 @@ INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (179, 45, 179, f
 INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (180, 45, 180, true);
 
 -- Réponses correctes pour le quiz Valorant
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (9, 3, 9, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (10, 3, 10, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (11, 3, 11, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (12, 3, 12, false);
+-- Réponses pour la Question 46
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (181, 46, 181, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (182, 46, 182, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (183, 46, 183, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (184, 46, 184, false);
 
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (13, 4, 13, true);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (14, 4, 14, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (15, 4, 15, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (16, 4, 16, false);
+-- Réponses pour la Question 47
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (185, 47, 185, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (186, 47, 186, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (187, 47, 187, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (188, 47, 188, false);
+
+-- Réponses pour la Question 48
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (189, 48, 189, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (190, 48, 190, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (191, 48, 191, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (192, 48, 192, false);
+
+-- Réponses pour la Question 49
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (193, 49, 193, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (194, 49, 194, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (195, 49, 195, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (196, 49, 196, false);
+
+-- Réponses pour la Question 50
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (197, 50, 197, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (198, 50, 198, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (199, 50, 199, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (200, 50, 200, false);
+
+-- Réponses pour la Question 51
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (201, 51, 201, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (202, 51, 202, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (203, 51, 203, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (204, 51, 204, false);
+
+-- Réponses pour la Question 52
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (205, 52, 205, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (206, 52, 206, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (207, 52, 207, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (208, 52, 208, false);
+
+-- Réponses pour la Question 53
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (209, 53, 209, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (210, 53, 210, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (211, 53, 211, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (212, 53, 212, false);
+
+-- Réponses pour la Question 54
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (213, 54, 213, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (214, 54, 214, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (215, 54, 215, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (216, 54, 216, false);
+
+-- Réponses pour la Question 55
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (217, 55, 217, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (218, 55, 218, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (219, 55, 219, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (220, 55, 220, false);
+
+-- Réponses pour la Question 56
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (221, 56, 221, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (222, 56, 222, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (223, 56, 223, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (224, 56, 224, false);
+
+-- Réponses pour la Question 57
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (225, 57, 225, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (226, 57, 226, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (227, 57, 227, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (228, 57, 228, false);
+
+-- Réponses pour la Question 58
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (229, 58, 229, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (230, 58, 230, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (231, 58, 231, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (232, 58, 232, false);
+
+-- Réponses pour la Question 59
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (233, 59, 233, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (234, 59, 234, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (235, 59, 235, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (236, 59, 236, false);
+
+-- Réponses pour la Question 60
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (237, 60, 237, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (238, 60, 238, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (239, 60, 239, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (240, 60, 240, false);
+
+-- Réponses pour la Question 61
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (241, 61, 241, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (242, 61, 242, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (243, 61, 243, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (244, 61, 244, false);
+
+-- Réponses pour la Question 62
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (245, 62, 245, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (246, 62, 246, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (247, 62, 247, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (248, 62, 248, false);
+
+-- Réponses pour la Question 63
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (249, 63, 249, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (250, 63, 250, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (251, 63, 251, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (252, 63, 252, false);
+
+-- Réponses pour la Question 64
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (253, 64, 253, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (254, 64, 254, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (255, 64, 255, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (256, 64, 256, false);
+
+-- Réponses pour la Question 65
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (257, 65, 257, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (258, 65, 258, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (259, 65, 259, false);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (260, 65, 260, false);
 
 -- Réponses correctes pour le quiz League of Legends
 INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (17, 5, 17, true);
