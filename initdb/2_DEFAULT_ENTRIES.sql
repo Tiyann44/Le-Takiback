@@ -746,7 +746,7 @@ INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (104, 26, 104, f
 INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (105, 27, 105, false);
 INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (106, 27, 106, true);
 INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (107, 27, 107, false);
-INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (108, 27, 108, true);
+INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (108, 27, 108, false);
 
 -- Bloc 12
 INSERT INTO answer (id, questionId, choiceId, isCorrect) VALUES (109, 28, 109, false);
