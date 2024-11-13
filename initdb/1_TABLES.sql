@@ -32,7 +32,7 @@ create table question
     id SERIAL PRIMARY KEY,
     quizId int not null,
     question TEXT not null,
-    image TEXT not null,
+    image TEXT,
     FOREIGN KEY (quizId) REFERENCES quiz(id) ON DELETE CASCADE
 );
 
