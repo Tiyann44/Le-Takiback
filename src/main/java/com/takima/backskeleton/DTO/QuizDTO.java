@@ -1,6 +1,5 @@
 package com.takima.backskeleton.DTO;
 
-import com.takima.backskeleton.models.Theme;
 import lombok.Builder;
 import lombok.Getter;
 

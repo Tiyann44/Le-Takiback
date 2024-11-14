@@ -1,6 +1,5 @@
 package com.takima.backskeleton.DTO;
 
-import com.takima.backskeleton.models.Answer;
 import com.takima.backskeleton.models.Choice;
 
 public class ChoiceMapper {

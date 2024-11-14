@@ -5,13 +5,10 @@ import com.takima.backskeleton.DAO.ChoiceDAO;
 import com.takima.backskeleton.DAO.QuestionDAO;
 import com.takima.backskeleton.DTO.AnswerDTO;
 import com.takima.backskeleton.DTO.AnswerMapper;
-import com.takima.backskeleton.DTO.QuestionDTO;
-import com.takima.backskeleton.DTO.QuestionMapper;
 import com.takima.backskeleton.models.Answer;
 import com.takima.backskeleton.models.Choice;
 import com.takima.backskeleton.models.Question;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
