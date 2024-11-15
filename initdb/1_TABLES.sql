@@ -4,6 +4,8 @@ create table users
     firstName TEXT not null,
     lastName TEXT not null,
     mail TEXT not null,
+    pseudo TEXT not null,
+    image TEXT not null,
     isAdmin BOOLEAN not null
 );
 
@@ -11,6 +13,7 @@ create table theme
 (
     id SERIAL PRIMARY KEY,
     name TEXT not null,
+    image TEXT not null,
     description TEXT not null
 );
 
@@ -20,7 +23,8 @@ create table quiz
     themeId int not null,
     name TEXT not null,
     description TEXT not null,
-    FOREIGN KEY (themeId) REFERENCES theme(id)
+    image TEXT not null,
+    FOREIGN KEY (themeId) REFERENCES theme(id) ON DELETE CASCADE
 );
 
 create table question
@@ -28,6 +32,7 @@ create table question
     id SERIAL PRIMARY KEY,
     quizId int not null,
     question TEXT not null,
+    image TEXT,
     FOREIGN KEY (quizId) REFERENCES quiz(id) ON DELETE CASCADE
 );
 

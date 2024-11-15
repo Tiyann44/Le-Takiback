@@ -3,23 +3,25 @@ package com.takima.backskeleton.models;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name = "answer")
 @NoArgsConstructor
 @Getter
+@Setter
 public class Answer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "question_id", nullable = false)
-    private Question question;  // Relation plusieurs réponses -> une question
+    @JoinColumn(name = "questionid", nullable = false)
+    private Question question;
 
     @ManyToOne
-    @JoinColumn(name = "choice_id", nullable = false)
-    private Choice choice;  // Relation plusieurs réponses -> un choix
+    @JoinColumn(name = "choiceid", nullable = false)
+    private Choice choice;
 
-    private Boolean isCorrect;  // Indique si la réponse est correcte ou non
+    private Boolean iscorrect;
 }
